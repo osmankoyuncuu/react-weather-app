@@ -8,9 +8,8 @@ export const GlobalStyles = createGlobalStyle`
 }
 
 body{
-  background-image: linear-gradient(135deg, #4646fc, #a7a7ff);
+  background-image: linear-gradient(150deg, #4646fc, #a7a7ff);
   height:100vh;
-  background-position: center;
 }
 
 button{
