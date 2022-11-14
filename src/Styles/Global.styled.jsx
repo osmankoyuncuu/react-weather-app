@@ -8,7 +8,7 @@ export const GlobalStyles = createGlobalStyle`
 }
 
 body{
-  background-image: linear-gradient(150deg, #4646fc, #a7a7ff);
+  background-color: ${({ theme }) => theme.color.third};
   height:100vh;
 }
 

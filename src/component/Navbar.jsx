@@ -1,9 +1,15 @@
-import NavbarContainer, { NavbarLink } from "../Styles/Navbar.styled";
+import NavbarContainer, {
+  NavbarLink,
+  NavbarLogo,
+} from "../Styles/Navbar.styled";
+import Logo from "../assets/weather-logo.gif";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <NavbarContainer>
-      <div>LOGO</div>
+      <NavbarLogo src={Logo} alt="logo" onClick={() => navigate("/")} />
       <div>
         <NavbarLink to="/">Home</NavbarLink>
         <NavbarLink to="turkeymap">Turkey Map</NavbarLink>

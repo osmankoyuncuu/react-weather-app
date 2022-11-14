@@ -1,23 +1,22 @@
 import { ThemeProvider } from "styled-components";
+import { DetailProvider } from "./context/DetailContext";
+import { GetWeatherProvider } from "./context/GetWeatherContext";
+import { SearchTextProvider } from "./context/SearchTextContext";
 import AppRouter from "./router/AppRouter";
 import { GlobalStyles } from "./Styles/Global.styled";
-
-const theme = {
-  color: {
-    first: "white",
-  },
-  responsive: {
-    small: "576px",
-    medium: "768px",
-    large: "992px",
-  },
-};
+import theme from "./Styles/theme.styled";
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <AppRouter />
+      <SearchTextProvider>
+        <DetailProvider>
+          <GetWeatherProvider>
+            <AppRouter />
+          </GetWeatherProvider>
+        </DetailProvider>
+      </SearchTextProvider>
     </ThemeProvider>
   );
 };
