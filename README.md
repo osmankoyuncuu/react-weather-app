@@ -1,3 +1,65 @@
+## Check The Live Website ➡️ [Live Website]()
+
+## Animation of the Website
+
+![image](./weather-app.gif)
+
+## Description
+
+Project aims to create a weather app.
+
+## Project Skeleton
+
+    react-weather-app
+    |
+    ├── public
+    │     └── favicon.ico
+    │     └── index.html
+    ├── src
+    │    ├── assets
+    │    │       └── weather-logo.gif
+    │    ├── component
+    │    │    ├── Detail.jsx
+    │    │    ├── Footer.jsx
+    │    │    ├── Form.jsx
+    │    │    └── Navbar.jsx
+    │    ├── context
+    │    │    ├── DetailContext.jsx
+    │    │    ├── GetWeatherContext.jsx
+    │    │    └── SearchTextContext.jsx
+    │    ├── pages
+    │    │    ├── CityList.jsx
+    │    │    ├── Home.jsx
+    │    │    ├── Map.jsx
+    │    │    └── NotFound.jsx
+    │    ├── router
+    │    │    └── AppRouter.jsx
+    │    ├── Styles
+    │    │    ├── CityList.styled.jsx
+    │    │    ├── Detail.styled.jsx
+    │    │    ├── FixDiv.styled.jsx
+    │    │    ├── Flex.styled.jsx
+    │    │    ├── Footer.styled.jsx
+    │    │    ├── Form.styled.jsx
+    │    │    ├── Global.styled.jsx
+    │    │    ├── Map.styled.jsx
+    │    │    ├── Navbar.styled.jsx
+    │    │    ├── NotFound.styled.jsx
+    │    │    └── theme.styled.jsx
+    │    ├── App.css
+    │    ├── App.js
+    │    ├── index.css
+    │    └── index.js
+    ├── .gitignore
+    ├── package.json
+    ├── README.md
+    ├── weather-app.gif
+    └── yarn.lock
+
+## Overview
+
+I mastered Js, React and Styled Component a features in this project. You can see the visual representation of the website above.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
