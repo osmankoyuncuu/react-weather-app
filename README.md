@@ -60,6 +60,69 @@ Project aims to create a weather app.
 
 I mastered Js, React and Styled Component a features in this project. You can see the visual representation of the website above.
 
+## Turkey Map
+
+## Installation
+
+```javascript
+npm install turkey-map-react
+```
+
+or
+
+```javascript
+yarn add turkey-map-react
+```
+
+## Usage
+
+### Importing (ES6)
+
+```javascript
+import TurkeyMap from "turkey-map-react";
+```
+
+### Basic usage with defaults
+
+```javascript
+<TurkeyMap />
+```
+
+### Handling events
+
+On click example:
+
+```javascript
+<TurkeyMap
+  onClick={({ plateNumber, name }) =>
+    console.log(plateNumber + " - " + name + " is just clicked!")
+  }
+/>
+```
+
+On mouse over example:
+
+```javascript
+<TurkeyMap
+  hoverable={true}
+  onHover={({ plateNumber, name }) =>
+    console.log("Cursor is over on " + plateNumber + " - " + name + "!")
+  }
+/>
+```
+
+### City component wrapping
+
+```javascript
+const renderCity = (cityComponent, cityData) => (
+  <Tooltip title={cityData.name} key={cityData.id}>
+    {cityComponent}
+  </Tooltip>
+);
+
+<TurkeyMap cityWrapper={renderCity} />;
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
