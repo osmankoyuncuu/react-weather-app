@@ -26,6 +26,9 @@ export const Card = styled(Flex)`
   overflow: auto;
   position: relative;
   padding-top: 1rem;
+  @media (max-width: ${({ theme }) => theme.responsive.xsmall}) {
+    margin: 0 0.5rem;
+  }
 `;
 
 export const Button = styled.button`
@@ -36,6 +39,9 @@ export const Button = styled.button`
   cursor: pointer;
   border: none;
   background-color: ${({ theme }) => theme.color.first};
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const Super = styled.sup`

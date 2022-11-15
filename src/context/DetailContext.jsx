@@ -4,7 +4,6 @@ const DetailContext = createContext();
 
 export const DetailProvider = ({ children }) => {
   const [detail, setDetail] = useState([]);
-
   return (
     <DetailContext.Provider value={{ detail, setDetail }}>
       {children}

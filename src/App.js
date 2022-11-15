@@ -5,6 +5,7 @@ import { SearchTextProvider } from "./context/SearchTextContext";
 import AppRouter from "./router/AppRouter";
 import { GlobalStyles } from "./Styles/Global.styled";
 import theme from "./Styles/theme.styled";
+import "./App.css";
 
 const App = () => {
   return (

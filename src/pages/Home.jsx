@@ -1,10 +1,10 @@
 import Form from "../component/Form";
-import Detail from "./Detail";
+import Detail from "../component/Detail";
 
-const Home = ({ getWeather }) => {
+const Home = () => {
   return (
     <>
-      <Form getWeather={getWeather} />
+      <Form />
       <Detail />
     </>
   );

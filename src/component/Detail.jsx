@@ -7,13 +7,15 @@ import { useDetail } from "../context/DetailContext";
 import { useGetWeather } from "../context/GetWeatherContext";
 
 const Detail = () => {
-  const { detail, setDetail } = useDetail();
-  const { getWeather, detailApi, setDetailApi } = useGetWeather();
-  console.log(detail);
+  const { detail } = useDetail();
+  const { setDetailApi, setList } = useGetWeather();
   const handleDelete = (name) => {
     const del = detail.filter((item) => item.name !== name);
+    const delName = del.map((item) => item.name);
     setDetailApi(del);
+    setList(delName);
   };
+
   return (
     <DetailContainer>
       {detail?.map((item) => {

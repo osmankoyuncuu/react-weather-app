@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
+
   return (
     <NavbarContainer>
       <NavbarLogo src={Logo} alt="logo" onClick={() => navigate("/")} />

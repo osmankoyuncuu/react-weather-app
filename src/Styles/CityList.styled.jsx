@@ -4,7 +4,7 @@ import Flex from "./Flex.styled";
 const CityListContainer = styled(Flex)`
   width: 100%;
   padding: 0;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 `;
 
 export const Select = styled.select`
@@ -14,6 +14,7 @@ export const Select = styled.select`
   border-radius: 0.5rem;
   padding-left: 1rem;
   color: white;
+  margin-bottom: 0.5rem;
   background-color: ${({ theme }) => theme.color.first};
   &:active {
     outline: 2px solid white;
